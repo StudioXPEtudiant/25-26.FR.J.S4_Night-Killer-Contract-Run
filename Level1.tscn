@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://b246yp6vpet40"]
+[gd_scene load_steps=5 format=3 uid="uid://b246yp6vpet40"]
 
 [ext_resource type="PackedScene" uid="uid://c2euiwl7sxe42" path="res://player_Scar.tscn" id="1_kyxg0"]
+[ext_resource type="PackedScene" uid="uid://b0nf2xwna6g6i" path="res://interact_object.tscn" id="2_mc20k"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mc20k"]
 size = Vector2(736.612, 52.5)
@@ -24,4 +25,7 @@ scale = Vector2(771.365, 55.264)
 mesh = SubResource("BoxMesh_cove1")
 
 [node name="Player_Scar" parent="." instance=ExtResource("1_kyxg0")]
-position = Vector2(150, 272)
+position = Vector2(168, 272)
+
+[node name="InteractObject" parent="." instance=ExtResource("2_mc20k")]
+position = Vector2(334, 283)

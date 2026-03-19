@@ -1,0 +1,53 @@
+[gd_scene load_steps=2 format=3 uid="uid://klpjjagq6lri"]
+
+[ext_resource type="Script" uid="uid://b3noh470yevmy" path="res://WiresTask.gd" id="1_ysgnn"]
+
+[node name="Task" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_ysgnn")
+
+[node name="LeftPanel" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 139.0
+offset_top = 144.0
+offset_right = 176.0
+offset_bottom = 191.0
+scale = Vector2(9.77408, 9.07591)
+
+[node name="RedLeft" type="Button" parent="LeftPanel"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="BlueLeft" type="Button" parent="LeftPanel"]
+layout_mode = 0
+offset_top = 10.0
+offset_right = 8.0
+offset_bottom = 18.0
+
+[node name="RightPanel" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 847.0
+offset_top = 155.0
+offset_right = 887.0
+offset_bottom = 195.0
+scale = Vector2(-10.5279, 9.14353)
+
+[node name="RedRight" type="Button" parent="RightPanel"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="BlueRight" type="Button" parent="RightPanel"]
+layout_mode = 0
+offset_top = 11.0
+offset_right = 8.0
+offset_bottom = 19.0
+
+[node name="Lines" type="Node2D" parent="."]
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
