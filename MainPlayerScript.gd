@@ -1,7 +1,7 @@
 extends RigidBody2D
 
 @export var moveSpeed: float = 300
-@export var jumpForce: float = 450
+@export var jumpForce: float = 250
 
 
 

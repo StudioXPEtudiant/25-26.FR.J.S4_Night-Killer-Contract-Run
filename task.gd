@@ -33,21 +33,23 @@ func try_connect(right_name):
 func draw_connection(left_name, right_name):
 	var left_node = get_node("LeftPanel/" + left_name)
 	var right_node = get_node("RightPanel/" + right_name)
-	
+
 	var left_rect = left_node.get_global_rect()
 	var right_rect = right_node.get_global_rect()
-	
+
 	var start_global = left_rect.position + left_rect.size / 2
 	var end_global = right_rect.position + right_rect.size / 2
-	
+
 	var start_pos = $Lines.to_local(start_global)
 	var end_pos = $Lines.to_local(end_global)
-	
+
 	var color = Color.WHITE
+
 	if "Red" in left_name:
 		color = Color.RED
 	elif "Blue" in left_name:
 		color = Color.BLUE
+
 	$Lines.add_line(start_pos, end_pos, color)
 
 func task_complete():

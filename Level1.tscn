@@ -1,7 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://b246yp6vpet40"]
+[gd_scene load_steps=7 format=3 uid="uid://b246yp6vpet40"]
 
+[ext_resource type="Script" uid="uid://cbpei5h0lxwji" path="res://level_1principal.gd" id="1_dwyiq"]
 [ext_resource type="PackedScene" uid="uid://c2euiwl7sxe42" path="res://player_Scar.tscn" id="1_kyxg0"]
 [ext_resource type="PackedScene" uid="uid://b0nf2xwna6g6i" path="res://interact_object.tscn" id="2_mc20k"]
+[ext_resource type="PackedScene" uid="uid://oijydlvjpfp3" path="res://door.tscn" id="3_cove1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mc20k"]
 size = Vector2(736.612, 52.5)
@@ -9,6 +11,7 @@ size = Vector2(736.612, 52.5)
 [sub_resource type="BoxMesh" id="BoxMesh_cove1"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_dwyiq")
 
 [node name="Node2D" type="Node2D" parent="."]
 
@@ -29,3 +32,6 @@ position = Vector2(168, 272)
 
 [node name="InteractObject" parent="." instance=ExtResource("2_mc20k")]
 position = Vector2(334, 283)
+
+[node name="Door" parent="." instance=ExtResource("3_cove1")]
+position = Vector2(407, 260)
